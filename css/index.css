@@ -1,0 +1,191 @@
+/* Allgemeine Definitionen*/
+main {
+  margin-top: 370px;
+}
+
+/* Bild Header */
+.header-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+@media (min-width: 768px) {
+  .header-img {
+    height: 700px;
+  }
+}
+
+/* Abschnitt Intro */
+.hero-container {
+  margin-bottom: 150px;
+}
+
+.hero-text h1 {
+  margin-bottom: 20px;
+}
+
+/* Abschnitt Slider */
+.section-slider {
+  margin: 180px 0 150px 0;
+}
+
+.section-slider h2 {
+  margin-bottom: 10px;
+}
+
+.slider {
+  width: 100%;
+  height: 230px;
+}
+
+.slider img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider img.active {
+  display: block;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.btn {
+  color: black;
+  cursor: pointer;
+  font-size: 45px;
+}
+
+/* Abschnitt Konfigurator */
+.section-configurator {
+  margin: 100px 0 90px 0 !important;
+}
+
+.section-configurator h2,
+.section-configurator p {
+  color: black;
+}
+
+.configurator-box {
+  width: 100%;
+  height: 230px;
+}
+
+.configurator-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.configurator-text p {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+/* Abschnitt Prozess */
+.section-process {
+  margin: 100px 0;
+}
+
+.section-process h2 {
+  margin-bottom: 0;
+}
+
+.process-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 190px;
+  padding: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/images/downloaded/sportwagen_grau_2.png);
+}
+
+.image-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url(/images/downloaded/laptop_arbeiten.jpg);
+}
+
+.image-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url(/images/downloaded/mail_erhalten.jpg);
+}
+
+.process-container .number {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+  color: white;
+}
+
+.process-container p {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.process-container i {
+  font-size: 40px;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.process-container i:hover {
+  transform: rotate(-45deg);
+}
+
+.first-text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Abschnitt Empfehlung */
+.section-recommendation {
+  margin: 100px 0;
+}
+
+.section-recommendation h2 {
+  color: black;
+}
+
+.car-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px;
+  padding: 30px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/images/downloaded/audi_s5_sportback.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.car-image p {
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 700;
+  color: white;
+}

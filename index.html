@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cruise Control</title>
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="icon" href="/images/icons/favicon.svg" type="image/svg+xml" />
     <link
@@ -14,9 +14,9 @@
   </head>
 
   <body>
-    <div class="container">
-      <!-- Navigation -->
-      <header class="">
+    <!-- Navigation -->
+    <header>
+      <div class="header-inner">
         <div class="nav-top">
           <img
             class="logo"
@@ -28,104 +28,159 @@
         </div>
         <nav>
           <ul>
-            <li class="active"><a href="/home.html">Home</a></li>
+            <li class="active"><a href="/index.html">Home</a></li>
             <li><a href="/cars.html">Autos</a></li>
             <li><a href="/about_us.html">Über uns</a></li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <!-- Intro -->
-      <div class="hero-image">
-        <img
-          class="header-img"
-          src="images/downloaded/sportwagen_weiss.jpg"
-          alt="Weisser Sportwagen"
-        />
-        <div class="intro-wrapper">
-          <h1>
-            Bring deinen <br />
-            Traum zum Rollen.
-          </h1>
-          <button>Autos entdecken</button>
+    <main>
+      <div class="container">
+        <!-- Intro -->
+        <div class="hero-container">
+          <img
+            class="header-img"
+            src="images/downloaded/sportwagen_weiss.png"
+            alt="Weisser Sportwagen"
+          />
+          <div class="hero-text">
+            <h1>
+              Bring deinen <br />
+              Traum zum Rollen.
+            </h1>
+            <a href="/cars.html">
+              <button>Autos entdecken</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Abschnitt Slider -->
+        <div class="grid grid-col2 section-slider">
+          <div class="column">
+            <h2>Fahrzeugvielfalt, die begeistert</h2>
+            <p>
+              Du suchst dein Traumauto? Bei Cruise Control findest du
+              vielfältige Modelle, die du ganz nach deinen Wünschen gestalten
+              kannst. Starte jetzt durch – dein perfektes Fahrzeug wartet!
+            </p>
+          </div>
+          <div class="column slider">
+            <img
+              src="/images/downloaded/auto_fahren.jpg"
+              class="active"
+              alt="Bild 1"
+            />
+            <img src="/images/downloaded/auto_verkaufen.jpg" alt="Bild 2" />
+            <img src="/images/downloaded/sportwagen_grau.jpg" alt="Bild 3" />
+
+            <div class="btn-container">
+              <i class="btn left ph-light ph-arrow-circle-left"></i>
+              <i class="btn right ph-light ph-arrow-circle-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abschnitt Konfigurator -->
+        <div class="grid grid-col2 section-configurator highlight-section">
+          <div class="column">
+            <h2>Dein Auto. Dein Style.</h2>
+            <div class="configurator-box">
+              <img
+                class="configurator-img"
+                src="/images/downloaded/mockup_laptop.png"
+                alt="Bild 2"
+              />
+            </div>
+          </div>
+          <div class="column configurator-text">
+            <p>
+              Mit unserem innovativen Konfigurator bringst du dein Traumauto auf
+              die Strasse – so, wie du es willst.
+            </p>
+          </div>
+        </div>
+
+        <!-- Abschnitt Prozess -->
+        <div class="grid grid-col4 section-process">
+          <div class="column">
+            <h2>
+              Schnell & einfach zu <br />
+              persönlichen Offerte
+            </h2>
+          </div>
+          <div class="column">
+            <div class="process-container image-1">
+              <p class="number">1.</p>
+              <div class="first-text">
+                <p>Modell wählen</p>
+                <i class="ph-light ph-arrow-circle-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="process-container image-2">
+              <p class="number">2.</p>
+              <p>Auto konfigurieren</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="process-container image-3">
+              <p class="number">3.</p>
+              <p>Offerte anfordern</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abschnitt Empfehlung -->
+        <div class="grid section-recommendation highlight-section">
+          <div class="column ">
+            <h2>Unsere Empfehlung</h2>
+            <div class="car-image">
+            <a href="/cars.html">
+              <button>Mehr erfahren</button>
+            </a>
+            <p>
+              Audi S5 <br />
+              Sportback
+            </p>
+          </div>
         </div>
       </div>
 
-      <!-- Slider -->
-      <main>
-        <div class="grid grid-col2">
-          <div class="column">
-            <h2>Fahrzeugvielfalt die Begeistert</h2>
-            <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-            nam, minima ducimus cumque, commodi autem cum voluptates ipsum
-            culpa, excepturi tempora nihil totam vero rerum repellendus facere
-            dignissimos voluptatem dolorem!
-          </div>
-          <div class="column">Column</div>
+        <!-- Footer Image -->
+              <div class="grid">
+          <div class="footer-image column highlight-section">
+  
         </div>
+      </div>
+    </main>
 
-        <!-- Konfigurator -->
-        <div class="grid grid-col2 background">
-          <div class="column">
-            <h2>Fahrzeugvielfalt die Begeistert</h2>
-            <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-            nam, minima ducimus cumque, commodi autem cum voluptates ipsum
-            culpa, excepturi tempora nihil totam vero rerum repellendus facere
-            dignissimos voluptatem dolorem!
-          </div>
-          <div class="column">Column</div>
-        </div>
-
-        <!-- Prozess -->
-        <div class="grid grid-col4">
-          <div class="column">
-            <h2>Schnell & einfach zur persönlichen Offerte</h2>
-          </div>
-          <div class="column box">
-            <h1>1.</h1>
-            <p>Modell wählen</p>
-          </div>
-          <div class="column box">
-            <h1>2.</h1>
-            <p>Auto konfigurieren</p>
-          </div>
-          <div class="column box">
-            <h1>3.</h1>
-            <p>Offerte anfordern</p>
-          </div>
-        </div>
-
-        <!-- Empfehlung -->
-        <div class="grid grid-col4 background">
-          <div class="column">Hey</div>
-          <div class="column">Column</div>
-          <div class="column">Column</div>
-          <div class="column">Column</div>
-        </div>
-      </main>
-
-      <!-- Footer -->
-      <footer>
+    <!-- Footer -->
+    <footer>
         <img
           class="logo"
-          src="images/icons/logo.svg"
+          src="images/icons/logo_black_blue.svg"
           alt="Logo Cruise Control"
         />
-        <nav>
           <ul>
-            <li><a href="/home.html">© 2025 Cruise Control</a></li>
-            <li><a href="/home.html">Impressunm</a></li>
-            <li><a href="/cars.html">Datenschutz</a></li>
-            <li><a href="/about_us.html">AGB</a></li>
+            <li class="footer-link"><a href="#">Impressum</a></li>
+            <li class="footer-link"><a href="#">Datenschutz</a></li>
+            <li class="footer-link"><a href="#">AGB</a></li>
           </ul>
-        </nav>
+          <ul>
+            <li>© 2025 Cruise Control</a></li>
+            </ul>
       </footer>
-    </div>
 
     <!-- Icon Library -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <!-- Allgemeines Script -->
+    <!-- Eigene Scripts -->
     <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
