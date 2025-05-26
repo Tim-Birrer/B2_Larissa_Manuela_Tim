@@ -277,7 +277,7 @@ header.active .close-nav {
 .footer-image {
   width: 100%;
   height: 180px;
-  background-image: url(/images/downloaded/auto_wald.png);
+  background-image: url(../images/downloaded/auto_wald.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

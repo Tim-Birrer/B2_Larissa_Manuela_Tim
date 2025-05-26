@@ -122,17 +122,17 @@ main {
 
 .image-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(images/downloaded/sportwagen_grau_2.png);
+    url(../images/downloaded/sportwagen_grau_2.png);
 }
 
 .image-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url(images/downloaded/laptop_arbeiten.jpg);
+    url(../images/downloaded/laptop_arbeiten.jpg);
 }
 
 .image-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-    url(images/downloaded/mail_erhalten.jpg);
+    url(../images/downloaded/mail_erhalten.jpg);
 }
 
 .process-container .number {
@@ -180,7 +180,7 @@ main {
   height: 450px;
   padding: 30px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(images/downloaded/audi_s5_sportback.png);
+    url(../images/downloaded/audi_s5_sportback.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
