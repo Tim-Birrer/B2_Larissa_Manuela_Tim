@@ -244,12 +244,6 @@ header.active .close-nav {
   padding: 0 25px;
 }
 
-@media (min-width: 569px) {
-  .container {
-    padding: 0 40px;
-  }
-}
-
 .grid {
   display: grid;
   gap: 25px;
@@ -276,12 +270,12 @@ header.active .close-nav {
 /* Footer Image */
 .footer-image {
   width: 100%;
-  height: 180px;
-  background-image: url(../images/downloaded/auto_wald.png);
+  height: 170px;
+  background-image: url(../images/downloaded/auto_berg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 30px !important;
+  margin-bottom: 70px;
 }
 
 /* Footer */
@@ -292,7 +286,6 @@ footer {
   margin: 0 auto;
   padding: 0 25px;
   gap: 15px;
-  margin-top: 30px;
   margin-bottom: 40px;
 }
 
@@ -328,13 +321,11 @@ footer li a {
   text-decoration: none;
 }
 
-/* Abschnitte mit grauem Hintergrund*/
+/* Abschnitte mit blauem Hintergrund*/
 .highlight-section {
-  background-color: #71a2ff;
   position: relative;
-  width: 100vw;
   left: -25px;
-  right: -25px;
+  width: calc(100% + 50px);
   padding: 45px 25px;
-  margin-bottom: 100px;
+  background-color: #71a2ff;
 }
