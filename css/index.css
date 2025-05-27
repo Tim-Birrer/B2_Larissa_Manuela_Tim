@@ -171,6 +171,7 @@
 /* Abschnitt Prozess */
 .section-process h2 {
   margin-bottom: 0;
+  word-break: break-word;
 }
 
 .process-container {
@@ -183,6 +184,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  word-break: break-word;
 }
 
 .image-1 {
@@ -217,6 +219,7 @@
   font-size: 40px;
   color: white;
   transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
 .process-container i:hover {
