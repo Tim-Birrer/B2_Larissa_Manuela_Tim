@@ -1,10 +1,10 @@
-const submitButton = document.getElementById("submit");
+const form = document.getElementById("formular");
 const fnameField = document.getElementById("fname");
 const lnameField = document.getElementById("lname");
 const emailField = document.getElementById("email");
 const phoneField = document.getElementById("phone");
 
-submitButton.addEventListener("click", async (event) => {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
   await databaseClient.insertInto("formulareigaben", {
