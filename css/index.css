@@ -40,7 +40,7 @@
 @media (min-width: 768px) {
   .hero-container {
     height: 700px;
-    padding: 0 100px 120px 100px;
+    padding: 0 100px 100px 100px;
     width: calc(100% + 200px);
   }
 
@@ -106,16 +106,22 @@
 
 @media (min-width: 768px) {
   .slider-inner img {
-    height: 360px;
+    height: 450px;
   }
 
   .slider-text {
     margin: auto 0;
-    padding-bottom: 50px;
+    padding-bottom: 65px;
   }
 
   .btn {
     font-size: 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .slider-inner img {
+    height: 360px;
   }
 }
 
@@ -151,7 +157,7 @@
 
 @media (min-width: 768px) {
   .configurator-box {
-    height: 360px;
+    height: 450px;
   }
 
   .configurator-text {
@@ -160,11 +166,43 @@
     justify-content: center;
   }
 
+  .section-configurator h2 .line-break {
+    display: block;
+  }
+
+  .configurator-text p {
+    margin: auto 0;
+    padding-top: 101px;
+    font-size: 34px;
+    line-height: 48px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .configurator-box {
+    height: 360px;
+  }
+
+  .section-configurator h2 .line-break {
+    display: inline;
+  }
+
   .configurator-text p {
     margin: auto 0;
     padding-top: 63px;
-    font-size: 40px;
-    line-height: 54px;
+    font-size: 38px;
+    line-height: 52px;
+  }
+
+  .section-configurator h2 .line-break {
+    display: inline;
+  }
+}
+
+@media (min-width: 1600px) {
+  .configurator-text p {
+    font-size: 42px;
+    line-height: 60px;
   }
 }
 
@@ -180,31 +218,31 @@
   justify-content: space-between;
   width: 100%;
   height: 190px;
-  padding: 30px;
+  padding: 35px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  word-break: break-word;
+  hyphens: auto;
 }
 
 .image-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url(../images/downloaded/sportwagen_grau_2.png);
 }
 
 .image-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
     url(../images/downloaded/laptop_arbeiten.jpg);
 }
 
 .image-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
     url(../images/downloaded/mail_erhalten.jpg);
 }
 
 .process-container .number {
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 65px;
+  line-height: 65px;
   font-weight: 700;
   color: white;
 }
@@ -240,6 +278,7 @@
   .process-container {
     height: 390px;
     width: 100%;
+    padding: 35px 25px;
   }
 
   .section-process {
@@ -251,6 +290,42 @@
 
   .section-process h2 {
     margin: auto 0;
+    hyphens: auto;
+  }
+
+  .process-container .number {
+    font-size: 55px;
+    line-height: 55px;
+  }
+  .first-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .first-text p {
+    order: 2;
+  }
+
+  .first-text i {
+    order: 1;
+  }
+}
+
+@media (min-width: 1000px) {
+  .process-container {
+    padding: 45px;
+  }
+
+  .process-container .number {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+@media (min-width: 1500px) {
+  .first-text {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
 
@@ -297,6 +372,6 @@
 
 @media (min-width: 1600px) {
   .section-recommendation {
-    padding-right: 363px !important;
+    padding-right: 360px !important;
   }
 }
