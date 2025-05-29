@@ -3,122 +3,297 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cruise Control</title>
+    <title>Autos</title>
     <link rel="stylesheet" href="css/cars.css" />
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="icon" href="/images/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="images/icons/favicon.svg" type="image/svg+xml" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
+
   <body>
-    <div class="container">
-      <header>
-        <img
-          class="logo"
-          src="../Archiv/logo_black.svg"
-          alt="Logo Cruise Control"
-        />
+    <!-- Navigation -->
+    <header>
+      <div class="header-inner">
+        <div class="nav-top">
+          <img
+            class="logo"
+            src="images/icons/logo_black_blue.svg"
+            alt="Logo Cruise Control"
+          />
+          <i class="open-nav ph ph-list"></i>
+          <i class="close-nav ph ph-x"></i>
+        </div>
         <nav>
           <ul>
-            <li><a href="/home.html">Home</a></li>
-            <li><a href="/cars.html" class="active">Autos</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li class="active"><a href="/cars.html">Autos</a></li>
             <li><a href="/about_us.html">Über uns</a></li>
           </ul>
         </nav>
-      </header>
-      <div class="hero-image">
-        <img
-          class="header-img"
-          src="images/downloaded/Alt/sportwagen_weiss.jpg"
-          alt="Weisser Sportwagen"
-        />
-        <div class="intro-wrapper">
-          <h1>Autos entdecken</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- Intro -->
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>Autos entdecken</h1>
+            <a href="/cars.html"> </a>
+          </div>
+        </div>
+
+        <!-- Abschnitt Fahrzeuge -->
+        <h2 class="car-title">Unsere Fahrzeuge</h2>
+        <div class="grid grid-col3 car-section">
+          <a href="#"
+            ><div class="column">
+              <img
+                src="images/downloaded/audi_s5_sportback_2.png"
+                alt="Audi S6 Sportback"
+              />
+              <div class="car-container">
+                <h3>Audi S6 Sportback</h3>
+                <div class="car-details-btn">
+                  <div class="detail-list">
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-tag"></i>
+
+                      <div><p>Audi</p></div>
+                    </div>
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-coins"></i>
+
+                      <div><p>Ab CHF 103'000.-</p></div>
+                    </div>
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-gauge"></i>
+
+                      <div><p>503 PS</p></div>
+                    </div>
+                    <div class="detail">
+                      <i class="ph-light ph-gear"></i>
+
+                      <div><p>Automatik</p></div>
+                    </div>
+                  </div>
+                  <i class="ph-light ph-arrow-circle-right car-btn"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#"
+            ><div class="column">
+              <img
+                src="images/downloaded/lamborghini_huracan_lp_610_4.png"
+                alt=" Lamborghini Huracán "
+              />
+              <div class="car-container">
+                <h3>Lamborghini Huracán</h3>
+                <div class="car-details-btn">
+                  <div class="detail-list">
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-tag"></i>
+
+                      <div>Audi</div>
+                    </div>
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-coins"></i>
+
+                      <div>Ab CHF 103'000.-</div>
+                    </div>
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-gauge"></i>
+
+                      <div>503 PS</div>
+                    </div>
+                    <div class="detail">
+                      <i class="ph-light ph-gear"></i>
+
+                      <div>Automatik</div>
+                    </div>
+                  </div>
+                  <i class="ph-light ph-arrow-circle-right car-btn"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#"
+            ><div class="column">
+              <img src="images/downloaded/bmw_m2.png" alt="BMW M2" />
+              <div class="car-container">
+                <h3>BMW M2</h3>
+                <div class="car-details-btn">
+                  <div class="detail-list">
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-tag"></i>
+
+                      <div><p>Audi</p></div>
+                    </div>
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-coins"></i>
+
+                      <div><p>Ab CHF 103'000.-</p></div>
+                    </div>
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-gauge"></i>
+
+                      <div><p>503 PS</p></div>
+                    </div>
+                    <div class="detail">
+                      <i class="ph-light ph-gear"></i>
+
+                      <div><p>Automatik</p></div>
+                    </div>
+                  </div>
+                  <i class="ph-light ph-arrow-circle-right car-btn"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#"
+            ><div class="column">
+              <img src="images/downloaded/porsche_911.png" alt="Porsche 911" />
+              <div class="car-container">
+                <h3>Porsche 911</h3>
+                <div class="car-details-btn">
+                  <div class="detail-list">
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-tag"></i>
+
+                      <div><p>Audi</p></div>
+                    </div>
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-coins"></i>
+
+                      <div><p>Ab CHF 103'000.-</p></div>
+                    </div>
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-gauge"></i>
+
+                      <div><p>503 PS</p></div>
+                    </div>
+                    <div class="detail">
+                      <i class="ph-light ph-gear"></i>
+
+                      <div><p>Automatik</p></div>
+                    </div>
+                  </div>
+                  <i class="ph-light ph-arrow-circle-right car-btn"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#"
+            ><div class="column">
+              <img
+                src="images/downloaded/hyundai_santa__fe_1_6_t_gdi.png"
+                alt="Hyundai Santa Fe"
+              />
+              <div class="car-container">
+                <h3>Hyundai Santa Fe</h3>
+                <div class="car-details-btn">
+                  <div class="detail-list">
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-tag"></i>
+
+                      <div>Audi</div>
+                    </div>
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-coins"></i>
+
+                      <div>Ab CHF 103'000.-</div>
+                    </div>
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-gauge"></i>
+
+                      <div>503 PS</div>
+                    </div>
+                    <div class="detail">
+                      <i class="ph-light ph-gear"></i>
+
+                      <div>Automatik</div>
+                    </div>
+                  </div>
+                  <i class="ph-light ph-arrow-circle-right car-btn"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#"
+            ><div class="column">
+              <img
+                src="images/downloaded/mercedes_amg_gt_s.png"
+                alt="Mercedes-AMG GT S"
+              />
+              <div class="car-container">
+                <h3>Mercedes-AMG GT S</h3>
+                <div class="car-details-btn">
+                  <div class="detail-list">
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-tag"></i>
+
+                      <div><p>Audi</p></div>
+                    </div>
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-coins"></i>
+
+                      <div><p>Ab CHF 103'000.-</p></div>
+                    </div>
+                    <div class="detail with-margin">
+                      <i class="ph-light ph-gauge"></i>
+
+                      <div><p>503 PS</p></div>
+                    </div>
+                    <div class="detail">
+                      <i class="ph-light ph-gear"></i>
+
+                      <div><p>Automatik</p></div>
+                    </div>
+                  </div>
+                  <i class="ph-light ph-arrow-circle-right car-btn"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Footer Image -->
+        <div class="grid">
+          <div class="footer-image column highlight-section"></div>
         </div>
       </div>
-      <main>
-        <div class="grid grid-col2">
-          <div class="column">
-            <h2>So einfach geht’s bei Cruise Control</h1>
-            <br />Bei Cruise Control findest du nicht nur dein Traumauto – du gestaltest es selbst.
-Wähle zuerst dein Wunschmodell aus unseren Hauptkategorien: SUV, Kleinwagen, Sportwagen oder Pick Up. Danach kannst du dein Fahrzeug ganz nach deinen Vorstellungen konfigurieren – von der Farbe bis zur Ausstattung.
-Bist du zufrieden mit deiner Auswahl? Dann fordere ganz einfach eine unverbindliche Offerte an. Schnell, transparent und auf dich zugeschnitten.
-Starte jetzt und erlebe, wie einfach Autokauf sein kann.
+    </main>
 
-          </div>
-          <div class="column"></div>
-        </div>
+    <!-- Footer -->
+    <footer>
+      <img src="images/icons/logo_white.svg" alt="Logo Cruise Control" />
 
-<div class="grid grid-col2">
-  <div class="column">
-  <img src=".../images/selfmade/IMG_7935.JPEG" alt="Skoda Kodiaq RS">
-  </div>
-  <div class="column">
-  <h2>Skoda Kodiaq RS</h2> <br>
-  Skoda <br>
-  50'000 CHF <br>
-  250 PS <br>
-  Automatik <br>
- </div>
-</div>
+      <ul>
+        <li class="footer-link"><a href="index.html">Impressum</a></li>
+        <li class="footer-link"><a href="index.html">Datenschutz</a></li>
+        <li class="footer-link"><a href="index.html">AGB</a></li>
+        <li><a>© 2025 Cruise Control</a></li>
+      </ul>
 
-<div class="grid grid-col2">
-  <div class="column">
-  <img src=".../images/selfmade/IMG_9799" alt="mini JCW">
-  </div>
-  <div class="column">
-  <h2>Mini John Cooper Works</h2> <br>
-  Mini <br>
-  25'000 CHF <br>
-  183 PS <br>
-  Automatik <br>
- </div>
-</div>
+      <ul>
+        <li class="disclaimer">
+          Das ist ein Schulprojekt von Larissa, Manuela und Tim – keine echte
+          Website.
+        </li>
+      </ul>
+    </footer>
 
-<div class="grid grid-col2">
-  <div class="column">
-  <img src=".../images/selfmade/IMG_2831" alt="Ford Mustang">
-  </div>
-  <div class="column">
-  <h2>Ford Mustang</h2> <br>
-  Ford <br>
-  45'000 CHF <br>
-  350 PS <br>
-  Automatik <br>
- </div>
-</div>
+    <!-- Icon Library -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-<div class="grid grid-col2">
-  <div class="column">
-  <img src=".../images/selfmade/IMG_6188" alt="dodge RAM">
-  </div>
-  <div class="column">
-  <h2>Mini John Cooper Works</h2> <br>
-  Mini <br>
-  25'000 CHF <br>
-  183 PS <br>
-  Automatik <br>
- </div>
-</div>
-      </main>
-      <footer>
-        <img
-          class="logo"
-          src="../Archiv/logo_black.svg"
-          alt="Logo Cruise Control"
-        />
-        <nav>
-          <ul>
-            <li><a href="/home.html">© 2025 Cruise Control</a></li>
-            <li><a href="/home.html">Impressunm</a></li>
-            <li><a href="/cars.html">Datenschutz</a></li>
-            <li><a href="/about_us.html">AGB</a></li>
-          </ul>
-        </nav> 
-      </footer>
-    </div>
+    <!-- Eigene Scripts -->
+    <script src="js/common.js"></script>
   </body>
 </html>

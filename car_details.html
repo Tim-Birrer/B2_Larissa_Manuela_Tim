@@ -16,49 +16,75 @@
 
   </head>
   <body>
-    <div class="container">
-      <header>
-        <img
-          class="logo"
-          src="../Archiv/logo_black.svg"
-          alt="Logo Cruise Control"
-        />
+    <!-- Navigation -->
+    <header>
+      <div class="header-inner">
+        <div class="nav-top">
+          <img
+            class="logo"
+            src="images/icons/logo_black_blue.svg"
+            alt="Logo Cruise Control"
+          />
+          <i class="open-nav ph ph-list"></i>
+          <i class="close-nav ph ph-x"></i>
+        </div>
         <nav>
           <ul>
-            <li><a href="/home.html">Home</a></li>
+            <li class="active"><a href="/index.html">Home</a></li>
             <li><a href="/cars.html">Autos</a></li>
             <li><a href="/about_us.html">Über uns</a></li>
           </ul>
         </nav>
-      </header>
-      <div class="hero-image">
-        <img
-          class="header-img"
-          src="images/downloaded/Alt/sportwagen_weiss.jpg"
-          alt="Weisser Sportwagen"
-        />
-        <div class="intro-wrapper">
-          <h1>Bring deinen <br />Traum zum Rollen.</h1>
-          <button>Autos entdecken</button>
-        </div>
       </div>
-      <main>
-        <div class="grid grid-col2">
-          <div class="column">
-            <h2>Fahrzeugvielfalt die Begeistert</h1>
-            <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-            nam, minima ducimus cumque, commodi autem cum voluptates ipsum
-            culpa, excepturi tempora nihil totam vero rerum repellendus facere
-            dignissimos voluptatem dolorem!
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- Intro -->
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>
+              BMW 114d Business
+            </h1>
+            <p>
+              Erleben Sie Fahrfreude neu – der BMW 114d Business überzeugt 
+              durch Effizienz, modernes Design und smarte Ausstattung. 
+              Ideal für Alltag und Beruf. 
           </div>
-          <div class="column">Column</div>
+        </div>
+      <main>
+        <!-- Abschnitt Slider -->
+        <div class="grid grid-col2 section-slider">
+          <div class="column slider">
+            <div class="slider-inner">
+              <img
+                src="images/downloaded/auto_verkaufen.png"
+                class="active"
+                alt="Bild 1"
+              />
+              <img src="images/downloaded/sportwagen_grau.jpg" alt="Bild 2" />
+              <img src="images/downloaded/auto_fahren.jpg" alt="Bild 3" />
+
+              <div class="btn-container">
+                <i class="btn left ph-light ph-arrow-circle-left"></i>
+                <i class="btn right ph-light ph-arrow-circle-right"></i>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="grid grid-col3 background">
-          <div class="column">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid officiis non modi amet quam excepturi id blanditiis incidunt praesentium voluptate, eos eum maxime nisi obcaecati delectus temporibus eaque! Modi, dignissimos.</div>
-          <div class="column">Column</div>
-          <div class="column">Column</div>
+        <!-- Abschnitt Angaben -->
+         <div class="grid section-information highlight-section">
+          <div class="column">
+            <i class="ph ph-tag"></i>
+                Audi <br />
+            <i class="ph ph-speedometer"></i>
+                503 PS <br />
+            <i class="ph ph-gear"></i>Automatik
+            </div>
+          </div>
         </div>
+        
 
         <div class="grid grid-col4">
           <form id="formular">
@@ -148,22 +174,26 @@
         </div>
         </div>
       </main>
-      <footer>
-        <img
-          class="logo"
-          src="../Archiv/logo_black.svg"
-          alt="Logo Cruise Control"
-        />
-        <nav>
-          <ul>
-            <li><a href="/home.html">© 2025 Cruise Control</a></li>
-            <li><a href="/home.html">Impressunm</a></li>
-            <li><a href="/cars.html">Datenschutz</a></li>
-            <li><a href="/about_us.html">AGB</a></li>
-          </ul>
-        </nav> 
-      </footer>
-    </div>
+      </div>
+      <!-- Footer -->
+    <footer>
+      <img src="images/icons/logo_white.svg" alt="Logo Cruise Control" />
+
+      <ul>
+        <li class="footer-link"><a href="index.html">Impressum</a></li>
+        <li class="footer-link"><a href="index.html">Datenschutz</a></li>
+        <li class="footer-link"><a href="index.html">AGB</a></li>
+        <li><a>© 2025 Cruise Control</a></li>
+      </ul>
+
+      <ul>
+        <li class="disclaimer">
+          Das ist ein Schulprojekt von Larissa, Manuela und Tim – keine echte
+          Website.
+        </li>
+      </ul>
+    </footer>
+    
     <script src="js/databaseClient.js"></script>
     <script src="js/formular.js"></script>
   </body>

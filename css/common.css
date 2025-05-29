@@ -271,7 +271,7 @@ header.active .close-nav {
   }
 
   .grid-col3 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 
   .grid-col4 {
