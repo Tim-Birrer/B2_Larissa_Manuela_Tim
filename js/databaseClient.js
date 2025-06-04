@@ -1,12 +1,3 @@
-/* 
-Lesen Sie alle Kommentare. 
-
-- Erlaubt die Kommunikation mit einer Datenbank via SQL und JavaScript zu Schulungszwecken.
-- Binden Sie das Skript in ihre HTML Seite ein.  
-- Sie müssen nicht im Detail verstehen, wie der Code funktioniert. 
-*/
-
-// Ändern Sie die folgenden beiden Werte, um ihre Datenbank zu verbinden.
 const GROUP_NAME = "b2";
 const PASSWORD = "ydo5wgf89jr2tomy";
 
@@ -37,15 +28,7 @@ const databaseClient = {
       console.error("DB error", error);
     }
   },
-  /*
-    Beispiel:
-    - sqlTable: "user" // Name der Tabelle in der SQL Datenbank
-    - formData: {
-        // "email" Name der Spalte in der SQL Tabelle
-        // "emailField.value" Eingabe des Benutzers aus dem Formularfeld
-        email: emailField.value,
-      }
-     */
+
   insertInto: async (sqlTable, formData) => {
     let result = null;
     const fields = Object.keys(formData);
@@ -63,12 +46,8 @@ const databaseClient = {
   },
 };
 
-/*
-Den folgenden Code demonstriert die Verwendung von executeSqlQuery und insertInto. 
-*/
 const testRun = async () => {
   const users = await databaseClient.executeSqlQuery("SELECT * FROM users");
-  // Das erste Element result[0] enthält Meta Informationen der Datenbank, das lassen wir weg. Die eigentlichen Daten sind in result[1]
   console.log(users[1]);
 
   await databaseClient.insertInto("users", {
