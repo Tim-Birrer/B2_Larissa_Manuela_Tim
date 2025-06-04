@@ -18,17 +18,18 @@
     <header>
       <div class="header-inner">
         <div class="nav-top">
-          <img
-            class="logo"
-            src="images/icons/logo_black_blue.svg"
-            alt="Logo Cruise Control"
-          />
+          <a href="index.html">
+            <img
+              class="logo"
+              src="images/icons/logo_black_blue.svg"
+              alt="Logo Cruise Control"
+          /></a>
           <i class="open-nav ph ph-list"></i>
           <i class="close-nav ph ph-x"></i>
         </div>
         <nav>
           <ul>
-            <li class="active"><a href="/index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="cars.html">Autos</a></li>
             <li><a href="about_us.html">Über uns</a></li>
           </ul>
@@ -45,7 +46,7 @@
               Bring deinen <br />
               Traum zum Rollen.
             </h1>
-            <a href="/cars.html">
+            <a href="cars.html">
               <button>Autos entdecken</button>
             </a>
           </div>
@@ -66,7 +67,7 @@
           <div class="column slider">
             <div class="slider-inner">
               <img
-                src="images/downloaded/auto_verkaufen.png"
+                src="images/downloaded/auto_verkaufen.jpg"
                 class="active"
                 alt="Bild 1"
               />
@@ -88,7 +89,7 @@
             <div class="configurator-box">
               <img
                 class="configurator-img"
-                src="images/downloaded/mockup_laptop.png"
+                src="images/downloaded/mockup_laptop.jpg"
                 alt="Bild 2"
               />
             </div>
@@ -112,10 +113,7 @@
           <div class="column">
             <div class="process-container image-1">
               <p class="number">1.</p>
-              <div class="first-text">
-                <p>Modell wählen</p>
-                <a href="#"><i class="ph-light ph-arrow-circle-right"></i></a>
-              </div>
+              <p>Automodell wählen</p>
             </div>
           </div>
 
@@ -139,13 +137,32 @@
           <div class="column">
             <h2>Unsere Empfehlung</h2>
             <div class="car-image">
-              <a href="/cars.html">
+              <a href="car_details_sport.html">
                 <button>Mehr erfahren</button>
               </a>
               <p>
                 Audi S5 <br />
                 Sportback
               </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abschnitt Game -->
+        <div class="grid grid-col2 section-game">
+          <div class="column big-title">
+            <h2>Online ins Fahrgefühl eintauchen.</h2>
+          </div>
+          <div class="column">
+            <div id="game">
+              <p id="score">0</p>
+              <div id="overlay"></div>
+              <div id="countdown">3</div>
+
+              <button id="startButton">Spiel starten</button>
+              <p id="highscore">Highscore: 0</p>
+              <div id="car1"></div>
+              <div id="car2"></div>
             </div>
           </div>
         </div>
@@ -160,18 +177,27 @@
     <!-- Footer -->
     <footer>
       <img src="images/icons/logo_white.svg" alt="Logo Cruise Control" />
-
       <ul>
-        <li class="footer-link"><a href="index.html">Impressum</a></li>
-        <li class="footer-link"><a href="index.html">Datenschutz</a></li>
-        <li class="footer-link"><a href="index.html">AGB</a></li>
-        <li><a>© 2025 Cruise Control</a></li>
+        <li class="footer-link">
+          <a href="legal_notice.html">Impressum</a>
+        </li>
+
+        <li class="footer-link">
+          <a href="https://www.instagram.com/"
+            ><i class="ph-light ph-instagram-logo footer-icons"></i>
+          </a>
+        </li>
+        <li class="footer-link">
+          <a href="https://www.linkedin.com/"
+            ><i class="ph-light ph-linkedin-logo footer-icons"></i>
+          </a>
+        </li>
       </ul>
 
       <ul>
         <li class="disclaimer">
           Das ist ein Schulprojekt von Larissa, Manuela und Tim – keine echte
-          Website.
+          Website. © 2025 Cruise Control
         </li>
       </ul>
     </footer>

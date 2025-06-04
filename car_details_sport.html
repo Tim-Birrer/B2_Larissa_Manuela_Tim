@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autos</title>
+    <link rel="stylesheet" href="css/car_details.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="icon" href="images/icons/favicon.svg" type="image/svg+xml" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header>
+      <div class="header-inner">
+        <div class="nav-top">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="images/icons/logo_black_blue.svg"
+              alt="Logo Cruise Control"
+          /></a>
+          <i class="open-nav ph ph-list"></i>
+          <i class="close-nav ph ph-x"></i>
+        </div>
+        <nav>
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="cars.html">Autos</a></li>
+            <li><a href="about_us.html">Über uns</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- Intro -->
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>Audi S5 Sportback</h1>
+            <a href="/cars.html"> </a>
+          </div>
+        </div>
+
+        <!-- Abschnitt Beschreibung -->
+        <div class="grid grid-col2 section-text">
+          <div class="column">
+            <div class="img-inner">
+              <img
+                src="images/downloaded/audi_s5_sportback_5.jpg"
+                alt="Audi S5 Sportback"
+              />
+            </div>
+          </div>
+          <div class="column text-block">
+            <h2>Eleganz in Bewegung</h2>
+            <p>
+              Der Audi S5 Sportback vereint sportliche Eleganz mit
+              Alltagspraktikabilität. Mit seinem kraftvollen V6-Motor und dem
+              quattro-Allradantrieb bietet er ein unvergleichliches
+              Fahrerlebnis. Innen überzeugt er mit viel Komfort und moderner
+              Ausstattung.
+            </p>
+          </div>
+        </div>
+
+        <!-- Abschnitt Facts -->
+        <h2>Fahrzeug-Highlights</h2>
+        <div class="grid fact-section highlight-section">
+          <div class="column">
+            <div class="fact-list">
+              <div class="fact">
+                <i class="ph-light ph-tag"></i>
+
+                <div><p>Sportwagen</p></div>
+              </div>
+
+              <div class="fact">
+                <i class="ph-light ph-gauge"></i>
+
+                <div><p>450 PS</p></div>
+              </div>
+              <div class="fact">
+                <i class="ph-light ph-gear"></i>
+
+                <div><p>8-Gang-Tiptronic</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abschnitt Slider -->
+        <h2>Design, das bewegt</h2>
+        <div class="grid section-slider">
+          <div class="column slider">
+            <div class="slider-inner">
+              <img
+                src="images/downloaded/audi_s5_sportback_2.jpg"
+                class="active"
+                alt="Bild 1"
+              />
+              <img
+                src="images/downloaded/audi_s5_sportback_3.jpg"
+                alt="Bild 2"
+              />
+              <img
+                src="images/downloaded/audi_s5_sportback_4.jpg"
+                alt="Bild 3"
+              />
+
+              <div class="btn-container">
+                <i class="btn left ph-light ph-arrow-circle-left"></i>
+                <i class="btn right ph-light ph-arrow-circle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abschnitt Formular -->
+        <div class="grid form-section">
+          <div class="column highlight-section">
+            <h2>Auto personalisieren & Offerte anfordern</h2>
+            <form id="form">
+              <div>
+                <div class="antriebsarten-sitze-farbe">
+                  <div class="antriebsarten-sitze">
+                    <div class="antriebsarten">
+                      <p>Antriebsart</p>
+                      <input
+                        type="radio"
+                        id="engine1"
+                        name="engine"
+                        value="Benzin"
+                      />
+                      <label for="engine1" class="radio-label">Benzin</label
+                      ><br />
+
+                      <input
+                        type="radio"
+                        id="engine2"
+                        name="engine"
+                        value="Diesel"
+                      />
+                      <label for="engine2">Diesel</label><br />
+
+                      <input
+                        type="radio"
+                        id="engine3"
+                        name="engine"
+                        value="Elektro"
+                      />
+                      <label for="engine3">Elektro</label><br />
+
+                      <input
+                        type="radio"
+                        id="engine4"
+                        name="engine"
+                        value="Hybrid"
+                      />
+                      <label for="engine4">Hybrid</label><br />
+                    </div>
+
+                    <div class="sitze">
+                      <p>Anzahl Sitze</p>
+                      <input
+                        type="radio"
+                        id="seat1"
+                        name="seat"
+                        value="2 Plätze"
+                      />
+                      <label for="seat1">2 Plätze</label><br />
+
+                      <input
+                        type="radio"
+                        id="seat2"
+                        name="seat"
+                        value="4 Plätze"
+                      />
+                      <label for="seat2">4 Plätze</label><br />
+
+                      <input
+                        type="radio"
+                        id="seat3"
+                        name="seat"
+                        value="5 Plätze"
+                      />
+                      <label for="seat3">5 Plätze</label><br />
+
+                      <input
+                        type="radio"
+                        id="seat4"
+                        name="seat"
+                        value="7 Plätze"
+                      />
+                      <label for="seat4">7 Plätze</label><br />
+                    </div>
+                  </div>
+                  <div class="aussenfarbe">
+                    <p>Aussenfarbe</p>
+                    <div class="farbe-container">
+                      <div class="farbe-spalte">
+                        <input
+                          type="radio"
+                          id="color1"
+                          name="color"
+                          value="Blau"
+                        />
+                        <label for="color1">Blau</label>
+
+                        <input
+                          type="radio"
+                          id="color2"
+                          name="color"
+                          value="Grau"
+                        />
+                        <label for="color2">Grau</label>
+
+                        <input
+                          type="radio"
+                          id="color3"
+                          name="color"
+                          value="Grün"
+                        />
+                        <label for="color3">Grün</label>
+
+                        <input
+                          type="radio"
+                          id="color4"
+                          name="color"
+                          value="Orange"
+                        />
+                        <label for="color4">Orange</label>
+                      </div>
+
+                      <div class="farbe-spalte">
+                        <input
+                          type="radio"
+                          id="color5"
+                          name="color"
+                          value="Pink"
+                        />
+                        <label for="color5">Pink</label>
+
+                        <input
+                          type="radio"
+                          id="color6"
+                          name="color"
+                          value="Rot"
+                        />
+                        <label for="color6">Rot</label>
+
+                        <input
+                          type="radio"
+                          id="color7"
+                          name="color"
+                          value="Schwarz"
+                        />
+                        <label for="color7">Schwarz</label>
+
+                        <input
+                          type="radio"
+                          id="color8"
+                          name="color"
+                          value="Weiss"
+                        />
+                        <label for="color8">Weiss</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="error"></div>
+              </div>
+
+              <div class="anrede">
+                <p>Anrede (optional)</p>
+                <input type="radio" id="gender1" name="gender" value="Herr" />
+                <label for="gender1">Herr</label>
+
+                <input type="radio" id="gender2" name="gender" value="Frau" />
+                <label for="gender2">Frau</label>
+              </div>
+
+              <div class="vorname-nachname">
+                <div class="vorname">
+                  <label for="fname">Vorname</label>
+
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="Max"
+                  />
+                  <div class="error"></div>
+                </div>
+
+                <div class="nachname">
+                  <label for="lname">Nachname</label>
+
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Mustermann"
+                  />
+                  <div class="error"></div>
+                </div>
+              </div>
+
+              <div class="email-telefon">
+                <div class="email">
+                  <label for="email">E-Mail</label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="max.mustermann@bluewin.ch"
+                  />
+                  <div class="error"></div>
+                </div>
+
+                <div class="telefon">
+                  <label for="tel">Telefon (optional)</label>
+                  <input
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    placeholder="+41 79 435 65 87"
+                  />
+                  <div class="error"></div>
+                </div>
+              </div>
+              <input type="submit" id="submit" value="Offerte anfordern" />
+              <div id="loader" class="loader hidden">
+                <div class="spinner"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Image -->
+        <div class="grid">
+          <div class="footer-image column highlight-section"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <img src="images/icons/logo_white.svg" alt="Logo Cruise Control" />
+      <ul>
+        <li class="footer-link">
+          <a href="legal_notice.html">Impressum</a>
+        </li>
+
+        <li class="footer-link">
+          <a href="https://www.instagram.com/"
+            ><i class="ph-light ph-instagram-logo footer-icons"></i>
+          </a>
+        </li>
+        <li class="footer-link">
+          <a href="https://www.linkedin.com/"
+            ><i class="ph-light ph-linkedin-logo footer-icons"></i>
+          </a>
+        </li>
+      </ul>
+
+      <ul>
+        <li class="disclaimer">
+          Das ist ein Schulprojekt von Larissa, Manuela und Tim – keine echte
+          Website. © 2025 Cruise Control
+        </li>
+      </ul>
+    </footer>
+
+    <!-- Icon Library -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Eigene Script -->
+    <script src="js/common.js"></script>
+    <script src="js/car_details.js"></script>
+    <script src="js/databaseClient.js"></script>
+  </body>
+</html>
