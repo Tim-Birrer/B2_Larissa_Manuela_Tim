@@ -491,6 +491,11 @@
   user-select: none;
 }
 
+.big-title h2 {
+  font-size: 28px;
+  line-height: 40px;
+}
+
 @media (min-width: 768px) {
   .big-title {
     display: flex;
@@ -498,5 +503,28 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+  }
+
+  .big-title h2 {
+    font-size: 42px;
+    line-height: 60px;
+    hyphens: auto;
+  }
+
+  #startButton {
+    font-size: 18px;
+    padding: 12px 28px;
+    white-space: nowrap;
+  }
+
+  #highscore {
+    font-size: 18px;
+    top: 235px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .big-title h2 {
+    hyphens: none;
   }
 }
