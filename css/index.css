@@ -1,31 +1,12 @@
 /* Abschnitt Intro*/
 .hero-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
-  width: calc(100% + 50px);
   height: 620px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  background-image: url(../images/downloaded/sportwagen_weiss.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("../images/downloaded/sportwagen_weiss.jpg");
   padding: 0 25px 80px 25px;
-  margin-top: auto;
 }
 
 .hero-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  pointer-events: none;
-  z-index: 1;
 }
 
 .hero-text {
@@ -41,24 +22,12 @@
   .hero-container {
     height: 700px;
     padding: 0 100px 100px 100px;
-    width: calc(100% + 200px);
-  }
-
-  .hero-text h1 {
-    margin-bottom: 30px;
   }
 }
 
 @media (min-width: 1600px) {
   .hero-container {
-    width: 100vw;
     height: 820px;
-  }
-
-  .hero-text {
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
   }
 }
 
@@ -102,6 +71,11 @@
   color: black;
   cursor: pointer;
   font-size: 45px;
+  transition: color 0.2s ease;
+}
+
+.btn:hover {
+  color: #71a2ff;
 }
 
 @media (min-width: 768px) {
@@ -131,7 +105,7 @@
 }
 
 .section-configurator h2 {
-  color: black;
+  color: #1e3663;
 }
 
 .section-configurator p {
@@ -227,17 +201,17 @@
 
 .image-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url(../images/downloaded/sportwagen_grau_2.png);
+    url("../images/downloaded/sportwagen_grau_2.jpg");
 }
 
 .image-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
-    url(../images/downloaded/laptop_arbeiten.jpg);
+    url("../images/downloaded/laptop_arbeiten.jpg");
 }
 
 .image-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
-    url(../images/downloaded/mail_erhalten.jpg);
+    url("../images/downloaded/mail_erhalten.jpg");
 }
 
 .process-container .number {
@@ -251,27 +225,6 @@
   font-size: 20px;
   font-weight: 700;
   color: white;
-}
-
-.process-container i {
-  font-size: 40px;
-  color: white;
-  transition: transform 0.2s ease;
-  text-decoration: none;
-}
-
-.process-container i:hover {
-  transform: rotate(-45deg);
-}
-
-.first-text {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.first-text a {
-  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -335,7 +288,7 @@
 }
 
 .section-recommendation h2 {
-  color: black;
+  color: #1e3663;
 }
 
 .car-image {
@@ -345,7 +298,7 @@
   height: 450px;
   padding: 30px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/downloaded/audi_s5_sportback.png);
+    url("../images/downloaded/audi_s5_sportback.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -373,5 +326,177 @@
 @media (min-width: 1600px) {
   .section-recommendation {
     padding-right: 360px !important;
+  }
+}
+
+/* Abschnitt Game */
+.section-game {
+  margin-bottom: 100px;
+}
+
+.section-game h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+
+#score {
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: white;
+  z-index: 10;
+}
+
+#game {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/icons/strasse.svg);
+  background-size: auto 100%;
+}
+
+#game.animate {
+  animation: background-animation 10s infinite linear;
+}
+
+@keyframes background-animation {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  100% {
+    background-position: -600px 0px;
+  }
+}
+
+#car1 {
+  position: absolute;
+  top: 286px;
+  left: 25px;
+  width: 150px;
+  height: 160px;
+  background-image: url("../images/icons/auto1.svg");
+  background-repeat: no-repeat;
+}
+
+#car2 {
+  position: absolute;
+  top: 286px;
+  z-index: 12;
+  left: 800px;
+  width: 150px;
+  height: 160px;
+  background-image: url("../images/icons/auto2.svg");
+  background-repeat: no-repeat;
+}
+
+#startButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#highscore {
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 19;
+  font-size: 16px;
+  color: white;
+  user-select: none;
+  pointer-events: none;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.705);
+  z-index: 15;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#car2.animate {
+  animation: car2 3s infinite;
+}
+
+@keyframes car2 {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -300px;
+  }
+}
+
+.jump-animation {
+  animation: jump 0.7s;
+}
+
+@keyframes jump {
+  0% {
+    top: 275px;
+    transform: rotate(0deg);
+  }
+  30% {
+    top: 125px;
+    transform: rotate(-15deg);
+  }
+  65% {
+    top: 125px;
+    transform: rotate(20deg);
+  }
+  90% {
+    top: 275px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 275px;
+    transform: rotate(0deg);
+  }
+}
+
+#countdown {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  color: white;
+  z-index: 30;
+  font-weight: 600;
+  display: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .big-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 }

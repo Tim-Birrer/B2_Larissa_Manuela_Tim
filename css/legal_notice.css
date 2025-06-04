@@ -1,0 +1,47 @@
+/* Abschnitt Intro*/
+.hero-container {
+  height: 410px;
+  background-image: url("../images/downloaded/büro.jpg");
+  padding: 0 25px 40px 25px;
+}
+
+.hero-container::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    height: 500px;
+    padding: 0 100px 60px 100px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero-container {
+    height: 600px;
+  }
+}
+
+/* Abschnitt Impressum*/
+.section-impressum {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.margin-text {
+  margin-bottom: 10px;
+}
+
+/* Footer Bild */
+.footer-image {
+  background-image: url("../images/downloaded/auto_strasse.jpg") !important;
+}
