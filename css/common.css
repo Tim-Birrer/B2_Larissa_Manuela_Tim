@@ -135,6 +135,7 @@ header {
   padding-left: 25px;
   padding-right: 25px;
   background-color: transparent;
+  z-index: 15;
 }
 
 .header-inner {
@@ -281,6 +282,7 @@ header.active .close-nav {
     align-items: center;
     max-height: none !important;
     overflow: visible !important;
+    z-index: 15;
   }
 
   nav ul {

@@ -1,7 +1,7 @@
 /* Abschnitt Intro*/
 .hero-container {
   height: 410px;
-  background-image: url("../images/downloaded/team.jpg");
+  background-image: url("../images/downloaded/tiago-ferreira-Znb7vorFMeo-unsplash.jpg");
   padding: 0 25px 40px 25px;
 }
 
@@ -29,6 +29,7 @@
 
 .about-us-title {
   margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .about-us-section h3 {
@@ -36,6 +37,11 @@
   margin-bottom: 15px;
   font-size: 20px;
   color: #1e3663;
+}
+
+.about-text {
+  margin-bottom: 100px;
+  max-width: 900px;
 }
 
 .about-us-section a {
